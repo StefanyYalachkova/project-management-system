@@ -1,0 +1,12 @@
+<h2>Tasks:</h2>
+
+<ul class="tasks">
+    <li *ngFor="let task of tasks">
+        <a routerLink="/task/{{task.title}}">
+            <span class="badge">{{task.title}}</span>
+            <span class="status">{{task.status}}</span>
+        </a>
+    </li>
+</ul>
+<button type="button" (click)="goBack()">go back</button>
+

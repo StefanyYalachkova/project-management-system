@@ -1,0 +1,37 @@
+<div *ngIf="task">
+
+  <h2>{{task.title}} Details:</h2>
+  <div>
+    <label for="task-title">Title: </label>
+    <input id="task-title" [(ngModel)]="task.title" placeholder="title">
+  </div>
+  <div>
+    <label for="task-type">Type: </label>
+    <input id="task-type" [(ngModel)]="task.type" placeholder="type">
+  </div>
+  <div>
+    <label for="task-description">Description: </label>
+    <input id="task-description" [(ngModel)]="task.description" placeholder="description">
+  </div>
+  <div>
+    <label for="task-assignee">Assignee: </label>
+    <input id="task-assignee" [(ngModel)]="task.assignee" placeholder="assignee">
+  </div>
+  <div>
+    <label for="task-priority">Priority: </label>
+    <input id="task-priority" [(ngModel)]="task.priority" placeholder="priority">
+  </div>
+  <div>
+    <label for="task-status">Status: </label>
+    <input id="task-status" [(ngModel)]="task.status" placeholder="status">
+  </div>
+  <div>
+    <label for="task-estimate">Estimate: </label>
+    <input id="task-estimate" [(ngModel)]="task.estimate" placeholder="estimate">
+  </div>
+  <div>
+    <label for="task-createdAt">Created At: </label>
+    <input id="task-createdAt" [(ngModel)]="task.createdAt" placeholder="createdAt">
+  </div>
+  <button type="button" (click)="goBack()">go back</button>
+</div>
